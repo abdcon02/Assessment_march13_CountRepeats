@@ -110,6 +110,22 @@
 
         }
 
+        function test_check_singleWord_punctuation()
+        {
+            //Arrange
+            $test_Counter = new RepeatCounter;
+            $input_string = "hey, how are you.";
+            $input_search = "hey";
+
+            //Act
+            $result = $test_Counter->countRepeats($input_string, $input_search);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
+        }
+
+
 
 
 

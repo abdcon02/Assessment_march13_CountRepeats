@@ -35,3 +35,13 @@ Test 7-
     but not a single word as the search.
     Output that the letter does not appear in the string.
         ex: search for "o" in the string "Hello World" -> count = 0
+
+Test 8-
+    Input a sentence with commas and periods as the string and a single word as the search.
+    Output that the word does appear in the string.
+        ex: search for "hey" in the string "hey, how are you." -> count = 1
+
+Test 9-
+    Input a sentence with Capitals as the string and a single word as the search.
+    Output that the word does appear in the string.
+        ex: search for "Welcome to Georgia, Fred." in the string "Fred" -> count = 1
