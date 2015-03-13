@@ -15,7 +15,7 @@
                         ++$counter;
                     }
 
-
+            var_dump($string_array);
             return $counter;
 
         }
