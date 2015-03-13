@@ -3,12 +3,14 @@
     class RepeatCounter
     {
 
-        function countRepeats
+        function countRepeats($string, $search)
         {
 
-            
+
         }
 
 
 
     }
+
+?>
