@@ -1,0 +1,37 @@
+Specs:
+
+Test 1-
+    Input a single letter as the string and the same letter as the search.
+    Output that the letter appears in the string once.
+        ex: search for "a" in the string "a" -> count = 1
+
+Test 2-
+    Input a single letter as the string and a different letter as the search.
+    Output that the letter does not appear in the string.
+        ex: search for "b" in the string "a" -> count = 0
+
+Test 3-
+    Input a single word as the string and the same word as the search.
+    Output that the word appears in the string once.
+        ex: search for "the" in the string "the" -> count = 1
+
+Test 4-
+    Input a single letter twice as the string and the same letter as the search.
+    Output that the letter appears in the string twice.
+        ex: search for "b" in the string "b" -> count = 2
+
+Test 5-
+    Input a single word twice as the string and the same word as the search.
+    Output that the word appears in the string twice.
+        ex: search for "and" in the string "and" -> count = 2
+
+Test 6-
+    Input a sentence as the string and a word in that sentence as the search.
+    Output that the word appears in the string once.
+        ex: search for "a" in the string "What a wonderful day" -> count = 1
+
+Test 7-
+    Input a sentence as the string and a single letter in a word in the sentence,
+    but not a single word as the search.
+    Output that the letter does not appear in the string.
+        ex: search for "o" in the string "Hello World" -> count = 0
