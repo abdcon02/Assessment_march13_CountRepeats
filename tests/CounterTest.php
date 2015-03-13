@@ -16,7 +16,7 @@
             $result = $test_Counter->countRepeats($input_string, $input_search);
 
             //Assert
-            $this->assertEquals("a", $result);
+            $this->assertEquals(1, $result);
 
         }
 
@@ -24,6 +24,3 @@
 
 
  ?>
-
-
- 
