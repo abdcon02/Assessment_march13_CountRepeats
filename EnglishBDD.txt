@@ -44,4 +44,4 @@ Test 8-
 Test 9-
     Input a sentence with Capitals as the string and a single word as the search.
     Output that the word does appear in the string.
-        ex: search for "Welcome to Georgia, Fred." in the string "Fred" -> count = 1
+        ex: search for "Welcome to Georgia, Fred." in the string "fred" -> count = 1

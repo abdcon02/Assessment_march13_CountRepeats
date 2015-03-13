@@ -125,6 +125,21 @@
 
         }
 
+        function test_check_singleWord_Captials()
+        {
+            //Arrange
+            $test_Counter = new RepeatCounter;
+            $input_string = "Welcome to Georgia, Fred.";
+            $input_search = "fred";
+
+            //Act
+            $result = $test_Counter->countRepeats($input_string, $input_search);
+
+            //Assert
+            $this->assertEquals(1, $result);
+
+        }
+
 
 
 
