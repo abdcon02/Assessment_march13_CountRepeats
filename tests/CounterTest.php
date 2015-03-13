@@ -114,7 +114,7 @@
         {
             //Arrange
             $test_Counter = new RepeatCounter;
-            $input_string = "hey, how are you hey.";
+            $input_string = "hey, how are you hey";
             $input_search = "hey";
 
             //Act

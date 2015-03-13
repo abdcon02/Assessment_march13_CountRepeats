@@ -3,45 +3,77 @@ Specs:
 Test 1-
     Input a single letter as the string and the same letter as the search.
     Output that the letter appears in the string once.
+
+    This is the most simple test for searching a string.
+
         ex: search for "a" in the string "a" -> count = 1
 
 Test 2-
     Input a single letter as the string and a different letter as the search.
     Output that the letter does not appear in the string.
+
+    The next step is to make sure the opposite of test 1 is true.
+
         ex: search for "b" in the string "a" -> count = 0
 
 Test 3-
     Input a single word as the string and the same word as the search.
     Output that the word appears in the string once.
+
+    After a single letter search becomes true, a single word search is the next simplest step.
+
         ex: search for "the" in the string "the" -> count = 1
 
 Test 4-
     Input a single letter twice as the string and the same letter as the search.
     Output that the letter appears in the string twice.
+
+    So far the count has only reached 1, now this test will check multiple instances of
+    a single letter and count them up.
+
         ex: search for "b" in the string "b" -> count = 2
 
 Test 5-
     Input a single word twice as the string and the same word as the search.
     Output that the word appears in the string twice.
+
+    Following my logic from above, this test needs to check multiple instances of the same
+    word.
+
         ex: search for "and" in the string "and" -> count = 2
 
 Test 6-
     Input a sentence as the string and a word in that sentence as the search.
     Output that the word appears in the string once.
+
+    Apart from test 2, the string inputs have only contained the search words. It's time
+    to expand and have the search go through a string of many different words.
+
         ex: search for "a" in the string "What a wonderful day" -> count = 1
 
 Test 7-
     Input a sentence as the string and a single letter in a word in the sentence,
     but not a single word as the search.
     Output that the letter does not appear in the string.
+
+    I don't want a single letter search parameter to count each time that letter is in the string,
+    only when that letter is its own word.
+
         ex: search for "o" in the string "Hello World" -> count = 0
 
 Test 8-
-    Input a sentence with commas and periods as the string and a single word as the search.
+    Input a sentence with commas, periods, and other grammar, as the string and a single word as the search.
     Output that the word does appear in the string.
-        ex: search for "hey" in the string "hey, how are you." -> count = 1
+
+    Most people use grammar when writing. This test makes sure that grammar isn't stopping the app from working
+    by taking the most simple single punctuation mark inside the input string.
+
+        ex: search for "hey" in the string "hey, how are you" -> count = 1
 
 Test 9-
     Input a sentence with Capitals as the string and a single word as the search.
     Output that the word does appear in the string.
+
+    Capitals are also present in most writing. This test accounts for simple capitalization inside the input.
+
         ex: search for "Welcome to Georgia, Fred." in the string "fred" -> count = 1

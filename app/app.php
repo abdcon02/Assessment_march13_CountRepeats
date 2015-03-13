@@ -16,10 +16,13 @@
 
     $app->post('/user_results', function() use ($app){
 
-        $search = new RepeatCounter;
-        $counter = $search->countRepeats($_POST['string'], $_POST['search']);
+        $repeatCount = new RepeatCounter;
+        $counter = $repeatCount->countRepeats($_POST['string'], $_POST['search']);
 
-        return $app['twig']->render('results.twig', array('count' => $counter));
+        $string = $_POST['string'];
+        $search = $_POST['search'];
+
+        return $app['twig']->render('results.twig', array('count' => $counter, 'input' => $string, 'word' => $search));
     });
 
     return $app;

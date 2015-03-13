@@ -2,12 +2,22 @@
 <html>
     <head>
         <title>Your Results</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
-        <h1>This is the count</h1>
-        <p>
-            {{ count }}
-        </p>
-
+        <div class="container">
+            <h1>Your Results</h1>
+            <h3>You entered:</h3>
+                <p>
+                    &ldquo;{{ input }}&rdquo;
+                </p>
+            <h3>The counter found:</h3>
+                <p>the word <em>{{ word }}</em> was found <span>{{ count }}</span>
+                    times in the above statement.
+                </p>
+            <div ="button">
+                <a href="/"><button type="submit">Go Back</button></a>
+            </div>
+        </div>
     </body>
 </html>

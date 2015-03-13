@@ -2,17 +2,23 @@
 <html>
     <head>
         <title>Word Repeat Counter</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
-        <h1>Word Repeat Counter</h1>
-        <form id="word counter" action="user_results" method="post">
-            <label for="string">Enter Something:</label>
-            <input type="text" name="string" >
-            <label for="string">Enter search word:</label>
-            <input type="text" name="search">
+        <div class="container">
+            <h1>Word Repeat Counter</h1>
 
-            <button type="submit">Count</button>
-        </form>
+            <form id="word counter" action="user_results" method="post">
+                <label for="string">Enter Something:</label>
+                <input type="text" name="string"size="50" required>
+                <label for="string">Enter search word:</label>
+                <input type="text" name="search" size="15" required>
+
+                <div class="button">
+                    <button type="submit">Count</button>
+                </div>
+            </form>
+        </div>
 
     </body>
 </html>
