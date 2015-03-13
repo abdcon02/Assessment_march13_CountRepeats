@@ -114,14 +114,14 @@
         {
             //Arrange
             $test_Counter = new RepeatCounter;
-            $input_string = "hey, how are you.";
+            $input_string = "hey, how are you hey.";
             $input_search = "hey";
 
             //Act
             $result = $test_Counter->countRepeats($input_string, $input_search);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals(2, $result);
 
         }
 
