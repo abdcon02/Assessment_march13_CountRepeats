@@ -9,13 +9,13 @@
             //$search_array = explode(" ", $search);
             $counter = 0;
 
-
-
-                    if(in_array($search, $string_array)){
-                        ++$counter;
-                    }
-
-            var_dump($string_array);
+            foreach($string_array as $word){
+                $word_array = array($word);
+                if(in_array($search, $word_array)){
+                    ++$counter;
+                }
+            }
+        
             return $counter;
 
         }
